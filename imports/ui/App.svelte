@@ -6,7 +6,9 @@
   import Counter from "./Counter";
   import Card from "./Card";
 
-  $: tasks = useTracker(() => Tasks.find({}, { sort: {createdAt:-1} }).fetch());
+  $: tasks = useTracker(() =>
+    Tasks.find({}, { sort: { createdAt: -1 } }).fetch()
+  );
 
   let newTask = "";
 
@@ -43,6 +45,13 @@
   ];
 </script>
 
+<style>
+  .cards_container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+</style>
+
 <div class="container">
   <header>
     <h1>Todo List</h1>
@@ -57,10 +66,7 @@
   </header>
   <ul>
     {#each $tasks as task}
-      <Task
-        key={task._id}
-        {task}
-        />
+      <Task key={task._id} {task} />
     {/each}
   </ul>
 
@@ -71,6 +77,13 @@
     <Counter />
   </div>
 
-  <Card imageUrl={image_list} title="foo" description="bar" />
+  <div class="cards_container">
+    <Card imageUrl={image_list} title="foo" description="bar" />
+    <Card imageUrl={image_list} title="foo" description="bar" />
+    <Card imageUrl={image_list} title="foo" description="bar" />
+    <Card imageUrl={image_list} title="foo" description="bar" />
+    <Card imageUrl={image_list} title="foo" description="bar" />
+    <Card imageUrl={image_list} title="foo" description="bar" />
+  </div>
 
 </div>
