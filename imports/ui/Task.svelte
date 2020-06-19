@@ -4,3 +4,4 @@
 </script>
 
 <li>{task.text}</li>
+<li>{task.createdAt}</li>
