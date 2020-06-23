@@ -13,7 +13,6 @@
     box-shadow: 0 0 4px rgba(255, 0, 0, 0.1);
     max-width: 300px;
     margin: 1rem auto;
-    padding: 1rem 2rem;
   }
   .main_image {
     width: 100%;

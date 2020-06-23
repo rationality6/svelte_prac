@@ -87,11 +87,6 @@
 
   <div class="cards_container">
     <Card imageUrl={image_list[random_gen()]} title="foo" description="bar" />
-    <Card imageUrl={image_list[random_gen()]} title="foo" description="bar" />
-    <Card imageUrl={image_list[random_gen()]} title="foo" description="bar" />
-    <Card imageUrl={image_list[random_gen()]} title="foo" description="bar" />
-    <Card imageUrl={image_list[random_gen()]} title="foo" description="bar" />
-    <Card imageUrl={image_list[random_gen()]} title="foo" description="bar" />
   </div>
 
 </div>
